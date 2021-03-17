@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global consultant company | McKinsey and Company</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+    	body{
+    		margin: 0px;
+    	}
+
+    	.sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: none;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        .bg_img{
+        	background-image: url('C:\Users\abc\Desktop\corporate.jpg');
+        	min-height: 400px;
+        }
+        .navbarflex{
+        	display: flex;
+        }
+        .navbar a{
+        	text-decoration: none;
+        	font-size: 20px;
+
+        }
+        .navbar{
+        	margin-top: 11px;
+        }
+        .navbarOptions{
+        	margin-left: 45px;
+        	margin-top: 37px;
+        }
+        .navbarOptions a{
+        	text-decoration: none;
+        	margin: 20px;
+        }
+        .search {
+        	margin-top: 25px;
+        	margin-left: 410px;
+        }
+        .search img{
+        	height: 40px;
+        	width: 40px;
+        	float: right;
+        }
+        .home_text{
+        	margin-left: 100px;
+        }
+    </style>
+
+    <script>
+    	function openNav() {
+                document.getElementById("Sidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "0px";
+        }
+
+        function closeNav() {
+                document.getElementById("Sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</head>
+<body>
+
+	<header>
+		<div class="bg_img">
+			<div class="navbarflex">
+			    <div id="Sidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#">Industries </a>
+                    <a href="#">Functions</a>
+                    <a href="#">Feature Insights</a>
+                    <a href="#">Careers</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Location</a>
+                    <a href="#">Email Subscription</a>
+                    <a href="#">Sign In</a>
+                </div>
+
+		        <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰</button>  
+                </div>
+
+                <div class="navbar">
+                	<a href="#">McKinsey <br> <span style="margin-left: 15px;">& Company</span></a>
+                </div>
+
+                <div class="navbarOptions">
+                	<a href="#">Industries</a>
+                	<a href="#">Functions</a>
+                	<a href="#">Feature Insights</a>
+                	<a href="#">Location</a>
+                	<a href="#">Careers</a>
+                	<a href="#">About Us</a>
+                </div>
+
+                <div class="search" style="float: right;">
+                	<img src="C:\Users\abc\Desktop\web itern proj\images\194_Instagram_Search_Sets-512.webp">
+                </div>
+		    </div>
+		    <div class="home_text">
+		    	<h1>The new possible:<br>How HR can help<br>build the organization<br>of the future<br><br></h1>
+		    	<p>The pandemic underscores the urgency of shifting to a more <br> dynamic talent and work model for long term. CHROs can<br> help by focusing on identity, agility, scalability.</p>
+		    </div>
+		</div>
+
+	</header>
+
+</body>
+</html>
